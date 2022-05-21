@@ -1,0 +1,147 @@
+{
+    "name": "sd_incubator",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "ahooks": "^2.9.3",
+        "antd-mobile": "^5.12.5",
+        "antd-mobile-icons": "^0.2.2",
+        "antd-mobile-v2": "^2.3.4",
+        "autoprefixer": "7.1.1",
+        "axios": "^0.18.0",
+        "babel-core": "6.25.0",
+        "babel-eslint": "7.2.3",
+        "babel-jest": "20.0.3",
+        "babel-loader": "7.0.0",
+        "babel-preset-react-app": "^3.0.1",
+        "babel-preset-react-native-stage-0": "^1.0.1",
+        "babel-runtime": "6.23.0",
+        "case-sensitive-paths-webpack-plugin": "2.1.1",
+        "chalk": "^2.1.0",
+        "crypto-js": "^3.1.9-1",
+        "css-loader": "0.28.4",
+        "dotenv": "4.0.0",
+        "echarts": "^5.0.0",
+        "eslint": "3.19.0",
+        "eslint-config-react-app": "^1.0.5",
+        "eslint-loader": "1.7.1",
+        "eslint-plugin-flowtype": "2.34.0",
+        "eslint-plugin-import": "2.2.0",
+        "eslint-plugin-jsx-a11y": "5.0.3",
+        "eslint-plugin-react": "7.1.0",
+        "extract-text-webpack-plugin": "2.1.2",
+        "file-loader": "0.11.2",
+        "font-awesome": "^4.7.0",
+        "fs-extra": "3.0.1",
+        "global": "^4.3.2",
+        "gulp": "^3.9.1",
+        "html-to-draftjs": "^1.0.1",
+        "html-webpack-plugin": "2.29.0",
+        "immutability-helper": "^2.6.4",
+        "immutable": "^3.8.1",
+        "isomorphic-fetch": "^2.2.1",
+        "jest": "20.0.4",
+        "js-cookie": "^2.2.1",
+        "lodash": "^4.17.10",
+        "mockjs": "^1.1.0",
+        "object-assign": "4.1.1",
+        "path-to-regexp": "^2.2.0",
+        "postcss-flexbugs-fixes": "3.0.0",
+        "postcss-loader": "2.0.6",
+        "promise": "7.1.1",
+        "react": "^17.0.1",
+        "react-bmap": "^1.0.69",
+        "react-color": "^2.13.5",
+        "react-custom-scrollbars": "^4.2.1",
+        "react-dev-utils": "^3.0.2",
+        "react-dnd": "^2.4.0",
+        "react-dnd-html5-backend": "^2.4.1",
+        "react-dom": "^17.0.1",
+        "react-draft-wysiwyg": "^1.10.12",
+        "react-error-overlay": "^1.0.9",
+        "react-infinite-scroller": "^1.1.4",
+        "react-loadable": "^5.3.1",
+        "react-redux": "^5.0.5",
+        "react-resizable": "^1.7.2",
+        "react-router": "^4.1.2",
+        "react-router-config": "^1.0.0-beta.3",
+        "react-router-dom": "^4.1.2",
+        "react-router-redux": "^4.0.8",
+        "redux": "^3.7.2",
+        "redux-logger": "^3.0.6",
+        "redux-saga": "^0.16.0",
+        "redux-thunk": "^2.2.0",
+        "reqwest": "^2.0.5",
+        "scp2": "ninja",
+        "ssh2": "^0.5.5",
+        "style-loader": "0.18.2",
+        "styled-components": "^5.2.1",
+        "svg-injector": "^1.1.3",
+        "sw-precache-webpack-plugin": "^0.11.4",
+        "url-loader": "0.5.9",
+        "webpack": "^2.6.1",
+        "webpack-dev-server": "^2.7.1",
+        "webpack-manifest-plugin": "1.1.0",
+        "whatwg-fetch": "2.0.3"
+    },
+    "scripts": {
+        "start": "node scripts/start.js",
+        "build": "node scripts/build.js",
+        "test": "node scripts/test.js --env=jsdom"
+    },
+    "jest": {
+        "collectCoverageFrom": [
+            "src/**/*.{js,jsx}"
+        ],
+        "setupFiles": [
+            "<rootDir>/config/polyfills.js"
+        ],
+        "testMatch": [
+            "<rootDir>/src/**/__tests__/**/*.js?(x)",
+            "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
+        ],
+        "testEnvironment": "node",
+        "testURL": "http://localhost",
+        "transform": {
+            "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+            "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+            "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+        },
+        "transformIgnorePatterns": [
+            "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+        ],
+        "moduleNameMapper": {
+            "^react-native$": "react-native-web"
+        },
+        "moduleFileExtensions": [
+            "web.js",
+            "js",
+            "json",
+            "web.jsx",
+            "jsx"
+        ]
+    },
+    "babel": {
+        "presets": [
+            "react-app"
+        ],
+        "plugins": [
+            [
+                "import",
+                {
+                    "libraryName": "antd-mobile-v2",
+                    "style": "css"
+                }
+            ],
+            "transform-decorators-legacy"
+        ]
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "devDependencies": {
+        "babel-plugin-import": "^1.2.1",
+        "less": "^2.7.2",
+        "less-loader": "^4.0.5"
+    }
+}
